@@ -86,7 +86,8 @@ Not yet supported, but Gilliam will at some point support simple
 provisioning of ancillary services such as databases, caches and queues. 
 
 
-Contents:
+Table of Content
+================
 
 .. toctree::
    :maxdepth: 2
