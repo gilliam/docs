@@ -6,14 +6,16 @@
 Welcome to Gilliam
 ==================
 
-Gilliam is a platform for hosting what is called *12 factor* apps.  It
-aims to make the live easier for developers of micro service oriented
-architectures. It may also help you with continious deployment.
+Gilliam is a platform for hosting what is called `12 factor
+<http://www.12factor.net>` apps.  It aims to make the live easier for
+developers of micro service oriented architectures.
 
-Gilliam does this by providing isolated environments where your apps
-run, a simple build sever that packages your apps into artifacts that
-can quickly be deployed and a scheduler that makes sure your services
-keep running in the case of failure.
+Gilliam does this by providing isolated environments where your
+services run, a simple build sever that packages your service into
+artifacts that can quickly be deployed and a scheduler that makes sure
+your services keep running in the case of failure.
+
+You can find Gilliam at `Github <http://github.com/gilliam>`.
 
 
 Distribution
@@ -26,6 +28,9 @@ this by having the user specify a scaling factor for a release.  This
 scaling factor states the desired number of instances per process
 type.  It is up to the platform to constantly monitor and make sure
 that enough resources are allocated to meet the requirements.
+
+Distribution is implemented in the `scheduler
+<http://github.com/gilliam/scheduler>`.
 
 
 Releases
