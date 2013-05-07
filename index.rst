@@ -97,6 +97,7 @@ Table of Content
 .. toctree::
    :maxdepth: 2
 
+   quick-intro
    requirements
    install
 
