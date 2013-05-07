@@ -11,10 +11,10 @@ Engine* or *dotCloud*, but targeted against systems where the backend
 is made up out of many small services (often called micro service
 oriented architectures).
 
-Gilliam does this by providing isolated environments where your
-services run, a simple build sever that packages your service into
-artifacts that can quickly be deployed and a scheduler that makes sure
-your services keep running in the case of failure.
+Gilliam provides isolated environments where your services run, a
+simple build sever that packages your service into artifacts that can
+quickly be deployed and a scheduler that makes sure your services keep
+running even in the case of failures.
 
 You can find Gilliam at `Github <http://github.com/gilliam>`_.
 
