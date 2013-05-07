@@ -68,14 +68,16 @@ The way you interact with Gilliam is through a simple command line
 client.  The client gives you, the developer, access to a set of tools
 to deploy and scale releases of your service.
 
-The `create` command is used to create a new service.  Creating services
-are quick and cheap.  Costs come when you deploy releases::
+The `create` command is used to create a new service.  Creating
+services are quick and cheap.  Costs come later, when you deploy
+releases of that service::
 
     $ gilliam create <service name>
 
 That's pretty much it.  The client will associate the current
 directory with the created service (using the `.gilliam.app` file), so
-its wise to run the command in the root directory of your service.
+its wise to run the command for example in the root directory of your
+service.
 
 In the following sections we will contain more information about
 different commands that the client provides.
