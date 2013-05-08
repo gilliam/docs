@@ -2,18 +2,26 @@
 Quick Intro
 ===========
 
-In short, *Gilliam* is platform much like *Heroku*, *Google App
-Engine* or *dotCloud*, but targeted against systems where the backend
-is made up out of many small services (often called micro service
-oriented architectures).
+In short, *Gilliam* is platform a much like *Heroku*, *Google App
+Engine* or *dotCloud*, but targeting micro service architectures (MSA)
+rather than "web apps".
 
 The main goal of Gilliam is to make it easier to develop, deploy and
-scale services for these micro SOA systems. There are also a set of
-secondary goals that have influenced the design:
+scale services for these MSA systems. There is also a set of secondary
+goals that have influenced the design:
 
 - Few and sane dependencies
-- Easy to integrate with existing systems and technoligies
+- Easy to integrate with existing systems and technologies
 - Promote best practices
+
+Some quick facts about Gilliam:
+
+- Written in Python using `gevent <http://www.gevent.org>`_
+- Made up out of a set of quite loosely coupled components
+- Components talk to each other using REST APIs
+- System integration, such as spinning up containers or building
+  images, is done in shell scripts
+- Keep it simple, stupid. But not simpler.
 
 
 Distribution and Process Model
@@ -23,7 +31,7 @@ In its core Gilliam is about distributing **images of software** and
 making sure that a specified number of instances of each image is
 executing.
 
-The images are composed of the service, its dependencies and the full
+The images are composed of a service, its dependencies and the full
 runtime. That means that everything the service needs to run is put
 into the image. There are several upsides to doing this, the main one
 being that the execution environment is seperated from the hosts

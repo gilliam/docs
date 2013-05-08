@@ -6,21 +6,23 @@
 Welcome to Gilliam
 ==================
 
-In short, *Gilliam* is platform much like *Heroku*, *Google App
-Engine* or *dotCloud*, but targeted against systems where the backend
-is made up out of many small services (often called micro service
-oriented architectures).
+*Gilliam* is a platform for `micro service architecturs
+<http://yobriefca.se/blog/2013/04/29/micro-service-architecture/>`_
+and `12 factor <http://www.12factor.net>`_ apps.
 
-Gilliam provides isolated environments where your services run, a
-simple build sever that packages your service into artifacts that can
-quickly be deployed and a scheduler that makes sure your services keep
-running even in the case of failures.
+Gilliam runs your services in isolated environments using
+LXC. It comes with a simple build server that packages your service
+into an artifact that can quickly be deployed. The core component of
+Gilliam is the scheduler, which is responsible for making sure that
+your services are always running.
+
+Heroku and other platform as a services have been big sources of
+inspiration for Gilliam. If you read about the `twelve-factor
+methodology <http://www.12factor.net>`_ a lot more things about
+Gilliam will make sense.
 
 You can find Gilliam at `Github <http://github.com/gilliam>`_.
 
-The services running on top of Gilliam are built using the
-`twelve-factor methodology <http://www.12factor.net>`_ (if you read
-this a lot of things about Gilliam will make more sense).
 
 Table of Content
 ================
