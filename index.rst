@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Gilliam
-==================
+Gilliam
+=======
 
 *Gilliam* is a platform for `micro service architecturs
 <http://yobriefca.se/blog/2013/04/29/micro-service-architecture/>`_
